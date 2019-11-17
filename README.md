@@ -15,3 +15,8 @@ $ export FLASK_ENV=development
 To run Flask development server:
 
 $ export FLASK_APP=file.py
+
+##Local development
+
+To start flask app:
+$ flask run
