@@ -2,3 +2,4 @@ __pycache__
 my-env
 .vscode/
 secrets.py
+weather-attempt.py

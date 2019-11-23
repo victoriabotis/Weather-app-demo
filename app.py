@@ -1,9 +1,7 @@
-import json
 
 from flask import Flask
-
-import weather
 import json
+import weather
 
 app = Flask(__name__)
 
@@ -12,11 +10,15 @@ app = Flask(__name__)
 # def hello():
 #     return "Hello, World"
 
+# @app.route("/weather-cities/")
+# def weather_route():
+#     temp = json.dumps(weather.weather())
+#     return temp
 
-@app.route("/weather-cluj/")
-def weather_route():
-    temp = json.dumps(weather.weather())
-    return temp
+@app.route("/weather-city/<city>")
+def weather_city(city):
+    temp = json.dumps(weather.weather(city))
+    return "Temperature in " + city + " is " + temp
 
 # @app.route("/weather/my-cities/")
 # def weather_multiple_cities():
