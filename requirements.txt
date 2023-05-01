@@ -1,2 +1,2 @@
 requests==2.22.0 #ultima versiune
-Flask==1.1.1 #ultima versiune
+Flask==2.3.2 #ultima versiune
