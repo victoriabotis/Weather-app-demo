@@ -1,2 +1,2 @@
-requests==2.22.0 #ultima versiune
+requests==2.31.0 #ultima versiune
 Flask==1.1.1 #ultima versiune
